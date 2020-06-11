@@ -1,4 +1,5 @@
 # 英国に小包を送るのに一番ベストな方法を探します。
+![英国までの国際郵便料金表のグラフ](parceltoUK/internationalParcelFee.png) 
 
 
 ## 前提
@@ -77,5 +78,7 @@ for i,k in enumerate(key):
 df_normal2 = {k:convertUnits(results[i][0]) for i,k in enumerate(key) if i in [3,4,11,12,15,16]} 
 ```
 
+## プロットする
+例として　scriptForPlot.ipynb　を見てください。
 
 
