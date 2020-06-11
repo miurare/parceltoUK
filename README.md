@@ -1,5 +1,5 @@
 # 英国に小包を送るのに一番ベストな方法を探します。
-![英国までの国際郵便料金表のグラフ](parceltoUK/internationalParcelFee.png) 
+![英国までの国際郵便料金表のグラフ](internationalParcelFee.png) 
 
 
 ## 前提
