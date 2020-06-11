@@ -24,4 +24,4 @@ EMSは、国際郵便の中で最優先の取り扱いにより、お預かり�
 
 
 ## 方法
-日本郵政の[海外の料金表](https://www.post.japanpost.jp/int/charge/list/)をデータを取得し、プロットします。
+日本郵政の[海外の料金表](https://www.post.japanpost.jp/int/charge/list/)をデータを取得し、pandasデータフレームにし、プロットします。
