@@ -34,12 +34,12 @@ EMSは、国際郵便の中で最優先の取り扱いにより、お預かり�
 # 国際小包
 s = getTable("https://www.post.japanpost.jp/int/charge/list/parcel3.html")
 key = s.check_order()  # テーブルのタイトルを取得
-results = s.maketable()　＃データフレーム生成生成
+results = s.maketable() # データフレーム生成生成
 df_parcel3 = {k:convertUnits(results[i][0]) for i,k in enumerate(key[:3])}
 
 # EMS
 s = getTable("https://www.post.japanpost.jp/int/charge/list/ems3.html")
-results = s.maketable()　＃データフレーム生成
+results = s.maketable() # データフレーム生成
 df_parcel3['EMS'] = convertUnits(results[0][0])  #作成したデータフレームを追加
 ```
 
@@ -47,7 +47,7 @@ df_parcel3['EMS'] = convertUnits(results[0][0])  #作成したデータフレー
 次に、通常郵便物の表を取得します。
 ```
 s = getTable("https://www.post.japanpost.jp/int/charge/list/normal2.html")
-results = s.maketable()  #データフレーム形成
+results = s.maketable() # データフレーム形成
 ```
 
 -　「船便　手紙」「船便　印刷物」の料金表は一部"g"が全角表示になっていたので、修正しています。
